@@ -2,13 +2,13 @@
 // выдаёт максимальное из этих чисел.
 
 Console.Write("Введите число a = ");
-int a = Int32.Parse(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите число b = ");
-int b = Int32.Parse(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите число c = ");
-int c = Int32.Parse(Console.ReadLine());
+int c = Convert.ToInt32(Console.ReadLine());
 
 var max = a;
 
