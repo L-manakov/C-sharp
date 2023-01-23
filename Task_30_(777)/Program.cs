@@ -24,9 +24,9 @@ int[] CreateArray(int number)
 // void <- (int[])
 void FillArray(int[] binNumber)
 {
+    binNumber[0] = 1;
     for (int i = 0; i < binNumber.Length; i++)
     {
-        binNumber[0] = 1;
         binNumber[i] = Random.Shared.Next(2);
     }
 }
@@ -65,7 +65,7 @@ int BinToDec(int[] arrBin)
 // string <-  (int[] , int)
 string GoodPrint(int[] arr, int result)
 {
-    return $"{String.Join("", arr)} >> {result}";
+    return $"{String.Join(" ", arr)} >> {result}";
 }
 
 int number = EnterNumber();
