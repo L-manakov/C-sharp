@@ -26,7 +26,7 @@ void FillArray(int[] randomNumbers)
 {
     for (int i = 0; i < randomNumbers.Length; i++)
     {
-        randomNumbers[i] = Random.Shared.Next(1,10);
+        randomNumbers[i] = Random.Shared.Next(1, 10);
     }
 }
 
@@ -34,8 +34,8 @@ void FillArray(int[] randomNumbers)
 // int[] <- int[]
 int[] ProductPairsNumbers(int[] array)
 {
-    int[] result = new int[array.Length/2];
-    for (int i = 0; i < array.Length/2; i++)
+    int[] result = new int[array.Length / 2];
+    for (int i = 0; i < array.Length / 2; i++)
     {
         result[i] = array[i] * array[array.Length - 1 - i];
     }
