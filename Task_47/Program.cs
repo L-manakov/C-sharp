@@ -5,7 +5,7 @@
 8   7,8 -7,1  9*/
 
 // 1. Метод заполнения матрицы случайными числами
-void FillArray(double[,] matr)
+void FillMatrix(double[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -17,7 +17,7 @@ void FillArray(double[,] matr)
 }
 
 // 2. Метод вывода матрицы на экран
-void PrintArray(double[,] matr)
+void PrintMatrix(double[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -36,5 +36,5 @@ int colsNum = Convert.ToInt32(Console.ReadLine());
 
 double[,] matrix = new double[rowsNum, colsNum];
 Console.WriteLine();
-FillArray(matrix);
-PrintArray(matrix);
+FillMatrix(matrix);
+PrintMatrix(matrix);
