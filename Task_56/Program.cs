@@ -36,12 +36,7 @@ int GetRowMinSum(int[,] matr)
         }
         Console.WriteLine($"Сумма элементов {i + 1} строки = {sum}");
 
-        if (i == 0) 
-        {
-        rowMinSum = sum;
-        row = i;
-        }
-        else if (rowMinSum > sum)
+        if (i == 0 || rowMinSum > sum)
         {
             rowMinSum = sum;
             row = i;
